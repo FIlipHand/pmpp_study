@@ -8,3 +8,9 @@ void print2DMatrix(float *A, int h, int w) {
         std::cout << "\n";
     }
 }
+
+void fillWithRandomFloats(float *A, size_t n) {
+    for (size_t i = 0; i < n; ++i) {
+        A[i] = (float)rand() / (float)RAND_MAX;
+    }
+}
