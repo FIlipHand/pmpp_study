@@ -13,6 +13,8 @@ int main() {
     std::cout << "Max threds per block in x: " << gpuInfo.maxThreadsDim[0] << " y: " << gpuInfo.maxThreadsDim[1] << " z: " << gpuInfo.maxThreadsDim[2] << "\n";
     std::cout << "Max blocks per grid in x: " << gpuInfo.maxGridSize[0] << " y: " << gpuInfo.maxGridSize[1] << " z: " << gpuInfo.maxGridSize[2] << "\n";
     std::cout << "Number of registers per SM: " << gpuInfo.regsPerBlock << "\n";
+    std::cout << "Max memory per block: " << gpuInfo.sharedMemPerBlock << "\n";
+    std::cout << "Max memory per SM: " << gpuInfo.sharedMemPerMultiprocessor << "\n";
 
     // I have exactly 1 GPU on my machine!;
     // Max threads per block: 1024
